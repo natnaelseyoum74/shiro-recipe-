@@ -99,7 +99,7 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
-console.log('WELCOME');
+console.log('WELCOME ');
 
 const init = function () {
   bookmarkview.addHandlerRender(controlBookmark);

@@ -12,13 +12,6 @@ import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import { Async } from 'regenerator-runtime';
 
-// https://forkify-api.herokuapp.com/v2
-
-///////////////////////////////////////
-// if (module.hot) {
-//   module.hot.accept();
-// }
-
 const controlRecipe = async function () {
   try {
     const id = window.location.hash.slice(1);
@@ -105,6 +98,8 @@ const controlAddRecipe = async function (newRecipe) {
     addRecipeView.renderError(err.message);
   }
 };
+
+console.log('WELCOME');
 
 const init = function () {
   bookmarkview.addHandlerRender(controlBookmark);
